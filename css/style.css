@@ -1,0 +1,404 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*** Baggrund ***/
+body {
+  background-image: url("../img/baggrund.png");
+}
+
+/**** Fonts ****/
+
+/** H1 font ***/
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/**** H2 font ***/
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*** p font ***/
+.short-stack-regular {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Permanent Marker";
+  text-align: center;
+  font-size: 5rem;
+}
+h2 {
+  font-family: "Rock Salt";
+}
+
+p {
+  font-family: "Short Stack";
+}
+
+ul {
+  font-family: "Short Stack";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.text {
+  margin: 20px;
+}
+
+a:visited {
+  color: black;
+}
+.p-menu {
+  font-size: 1.5rem;
+}
+.h1-pop {
+  font-size: 3rem;
+}
+
+.stor:hover {
+  color: rgb(193, 21, 170);
+}
+
+.intro {
+  font-size: 1.5rem;
+}
+.stor {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 10rem;
+  }
+  .h1-pop {
+    font-size: 4rem;
+  }
+  .intro {
+    font-size: 2rem;
+  }
+  .stor {
+    font-size: 2.5rem;
+  }
+}
+
+/*** Liste ***/
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+  background: url("../img/Layer_1.svg") no-repeat center / contain;
+}
+
+/**** Mine projekter ***/
+.mobilesite {
+  background-color: rgba(214, 204, 194, 1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.emnesite {
+  background-color: rgba(214, 204, 194, 1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.emergencysite {
+  background-color: rgba(214, 204, 194, 1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.virksomhedssite {
+  background-color: rgba(214, 204, 194, 1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.cta {
+  background-color: rgba(213, 189, 175, 1);
+  font-family: "Rock Salt";
+  border-radius: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+.cta:hover {
+  color: white;
+}
+.site {
+  background-color: rgba(213, 189, 175, 1);
+  font-family: "Rock Salt";
+  border-radius: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.site:hover {
+  color: white;
+}
+.img1 {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  box-shadow: 4px 3px 4px rgb(80, 93, 100);
+}
+@media (min-width: 768px) {
+  .img1 {
+    width: 500px;
+    margin-top: 50px;
+  }
+  .img1:hover {
+    width: 550px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .site {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-right: 4rem;
+    margin-left: 4px;
+  }
+}
+
+/**** Min læring ****/
+.cta_btn {
+  border: none;
+  font-family: "Rock Salt";
+  font-size: 3rem;
+  background-color: rgba(214, 204, 194, 1);
+  padding: 40px;
+  margin: 20px;
+  box-shadow: 6px 5px 6px rgb(80, 93, 100);
+}
+@media (min-width: 768px) {
+  .pop-img {
+    height: 600px;
+  }
+}
+
+/*** popup vindue ***/
+[popover] {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  background-color: rgba(245, 235, 224, 1);
+  border-radius: 10px;
+
+  width: 400px;
+  max-width: 400px;
+  max-height: 90vh;
+  border: none;
+}
+.btn-luk {
+  background-color: rgba(213, 189, 175, 1);
+  font-family: "Rock Salt";
+  border-radius: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  [popover] {
+    width: 600rem;
+    max-width: 1100px;
+  }
+}
+/* Backdrop */
+[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/**** Info ****/
+.img_mig {
+  margin-left: 30px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .img_mig {
+    margin-left: 30px;
+    height: 800px;
+    margin-bottom: 40px;
+  }
+}
+
+.skema {
+  height: 300px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/***** Menu ****/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(213, 189, 175, 1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+  width: 130px;
+  height: auto;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+.menu .projekter {
+  font-family: "Rock Salt";
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+.menu a:hover {
+  color: white;
+  font-family: "Rock Salt";
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 897px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    z-index: 10; /* sørger for at burgeren ligger over andet indhold */
+    right: 20px;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(213, 189, 175, 1);
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: right;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  nav.active .menu .round-btn {
+    margin-left: auto;
+  }
+}
+
+/*** afprøvning ***/
+
+.mobilesite:hover + .text-hide2 {
+  display: block;
+}
+
+.text-hide2 {
+  visibility: hidden;
+}
