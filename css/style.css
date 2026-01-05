@@ -12,6 +12,8 @@ img {
 /*** Baggrund ***/
 body {
   background-image: url("../img/baggrund.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /**** Fonts ****/
